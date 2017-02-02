@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>banner</title>
+    <link rel="stylesheet" href="css/modeSlide.css">
+    <link rel="stylesheet" href="css/modeFade.css">
+</head>
+<style>
+    body{
+        font-family: "Microsoft YaHei UI";
+    }
+    .banner-box {
+        width: 1200px;
+    }
+    .content-img li {
+        width: 1200px;
+    }
+</style>
+<body>
+<h1>无缝轮播</h1>
+<div class="banner-box box1" id="banner-img" style="overflow: hidden">
+    <ul class="content-img" style="height: 312px;width:3000px;">
+        <li style="background: #ccc;">PAGE ONE</li>
+        <li style="background:indianred;">PAGE TWO</li>
+        <li style="background:deepskyblue;">PAGE THERE</li>
+    </ul>
+    <div class="slide-box">
+        <div class="sPrev"><</div>
+        <div class="sNext">></div>
+    </div>
+    <ol>
+        <li class="cur">ONE</li>
+        <li>TWO</li>
+        <li>THERE</li>
+    </ol>
+</div>
+
+<h1>普通轮播</h1>
+<div class="banner-box box2">
+    <ul class="content-img">
+        <li style="background: #ccc;">PAGE ONE</li>
+        <li style="background:indianred; display: none">PAGE TWO</li>
+        <li style="background:deepskyblue; display: none">PAGE THERE</li>
+    </ul>
+    <div class="slide-box">
+        <div class="sPrev"><</div>
+        <div class="sNext">></div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+<script>
+    $(".box1").slide({
+        "slideMode":"slide",
+        "bannerWidth":1200
+    });
+    $(".box2").slide({
+        "slideMode":"fade",
+    })
+</script>
+</body>
+</html>
