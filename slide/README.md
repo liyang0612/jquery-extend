@@ -7,4 +7,4 @@
 +   true:自动播放
 +   false:手动播放
 
-###    sPrev和sNext为轮播的<b>固定</b>切换按钮
+###    sPrev和sNext为轮播的<b>固定</b>切换按钮。
